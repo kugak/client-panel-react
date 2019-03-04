@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { compose } from "redux";
 import { firestoreConnect, isLoaded, isEmpty } from "react-redux-firebase";
+import Spinner from "../layouts/Spinner";
 import PropTypes from "prop-types";
 
 class Clients extends Component {
@@ -54,7 +55,7 @@ class Clients extends Component {
         </div>
       );
     } else {
-      return <h1>Loading...</h1>;
+      return <Spinner />;
     }
   }
 }
