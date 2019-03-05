@@ -41,10 +41,12 @@ class Clients extends Component {
               </h2>
             </div>
             <div className="col-md-6">
-              <h5 className="text-right text-secondary">Total Owed </h5>
-              <span className="text-primary">
-                ${parseFloat(totalOwed).toFixed(2)}
-              </span>
+              <h5 className="text-right text-secondary">
+                Total Owed{" "}
+                <span className="text-primary">
+                  ${parseFloat(totalOwed).toFixed(2)}
+                </span>
+              </h5>
             </div>
           </div>
           <table className="table table-striped">
