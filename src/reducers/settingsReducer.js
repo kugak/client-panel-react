@@ -6,7 +6,7 @@ import {
 
 const initialState = {
   disableBalanceOnAdd: true,
-  disableBalanceonEdit: false,
+  disableBalanceOnEdit: false,
   allowRegistration: false
 };
 
@@ -21,7 +21,7 @@ export default function(state = initialState, action) {
     case DISABLE_BALANCE_ON_EDIT:
       return {
         ...state,
-        disableBalanceonEdit: !state.disableBalanceonEdit
+        disableBalanceOnEdit: !state.disableBalanceOnEdit
       };
 
     case ALLOW_REGISTERATION:
