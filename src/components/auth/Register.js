@@ -2,13 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { compose } from "redux";
-import {
-  firestoreConnect,
-  isLoaded,
-  isEmpty,
-  firebaseConnect,
-  withFirebase
-} from "react-redux-firebase";
+import { firebaseConnect } from "react-redux-firebase";
 import { notifyUser } from "../../actions/notifyActions";
 import Alert from "../layouts/Alert";
 

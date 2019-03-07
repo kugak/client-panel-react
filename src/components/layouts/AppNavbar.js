@@ -3,12 +3,7 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { compose } from "redux";
-import {
-  firestoreConnect,
-  isLoaded,
-  isEmpty,
-  firebaseConnect
-} from "react-redux-firebase";
+import { firebaseConnect } from "react-redux-firebase";
 
 class AppNavbar extends Component {
   state = {

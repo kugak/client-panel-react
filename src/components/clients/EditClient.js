@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { compose } from "redux";
-import { firestoreConnect, isLoaded, isEmpty } from "react-redux-firebase";
+import { firestoreConnect } from "react-redux-firebase";
 import Spinner from "../layouts/Spinner";
 import PropTypes from "prop-types";
 
@@ -30,7 +30,7 @@ class EditClient extends Component {
       email: this.emailInput.current.value,
       phone: this.phoneInput.current.value,
       balance:
-        this.balanceInput.current.value == ""
+        this.balanceInput.current.value === ""
           ? 0
           : this.balanceInput.current.value
     };
